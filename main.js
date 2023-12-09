@@ -8,6 +8,10 @@ removeBtn.addEventListener("click", () => {
 
 submitBtn.addEventListener("click", () => {
   let useNumber = document.getElementById("number-input").value;
+
+  const removeInput = document.getElementById("input-form");
+  removeInput.style.display = "none";
+
   if (useNumber == "") {
     alert("Pease Enter a number");
   } else if (useNumber == 0 || useNumber < 0) {
