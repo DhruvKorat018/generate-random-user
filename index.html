@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="input-form" style="margin-bottom: 50px" action="#">
+      <label for="number-input">Enter a number</label>
+      <input id="number-input" type="number" autocomplete="off" onKeyPress="if (this.value.length==2) return false;" />
+      <button id="submit-btn" type="submit">Generate Users</button>
+      <button id="remove-btn" type="submit">Remove users</button>
+    </form>
+
+    <div id="user-name"></div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
